@@ -37,6 +37,9 @@ jobs:
       - name: Unit tests
         run: npm test
 
+      - name: Sharing source contracts
+        run: node --test scripts/social-metadata.test.mjs
+
       - name: Types
         run: npm run typecheck
 
@@ -74,10 +77,13 @@ jobs:
       - name: End-to-end tests
         run: npm run e2e
 
-      - name: Upload report
-        if: failure()
+      - name: Upload report and sharing evidence
+        if: always()
         uses: actions/upload-artifact@v7
         with:
           name: playwright-report
-          path: playwright-report/
+          path: |
+            playwright-report/
+            test-results/
+          if-no-files-found: ignore
           retention-days: 7
