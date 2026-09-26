@@ -2,8 +2,19 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://route.jev.works"),
   title: "Jev Router Lab",
-  description: "Jev decides which tool or model fits a request. Your code executes it. A TypeSafe Jev routing demo.",
+  description: "Unofficial community tool and model routing with Jev: closed-set choices, explicit fallbacks, and application-owned authorization.",
+  openGraph: {
+    type: "website",
+    siteName: "Jev Router Lab",
+    title: "Jev Router — selection is not authorization",
+    description: "An unofficial TypeScript routing lab with closed choices and inspectable fallback policies.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [{ url: "/opengraph-image", alt: "Jev Router — unofficial community tool and model routing" }],
+  },
 };
 
 /** Apply a saved theme before first paint. Dark is the default. */
