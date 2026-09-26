@@ -1,6 +1,6 @@
 {
-  "repository": "BunsDev/typesafe-router",
-  "description": "Community TypeScript tool and model router powered by TypeSafe AI Jev, with closed-set choices, confidence thresholds, explicit fallbacks, and a Next.js demo.",
+  "repository": "TypeSafeAI/typesafe-router",
+  "description": "Unofficial TypeScript tool and model router powered by Jev with closed-set choices, confidence thresholds, explicit fallbacks, and a Next.js lab.",
   "topics": [
     "typesafe-ai",
     "jev",
@@ -9,9 +9,10 @@
     "tool-routing",
     "model-routing",
     "ai-routing",
-    "decision-models",
-    "confidence-thresholds",
-    "ai-agents"
+    "ai-agents",
+    "decision-models"
   ],
-  "note": "Intended GitHub About metadata. This file does not apply repository settings automatically."
+  "social_preview": "docs/discovery/assets/social-preview.png",
+  "status": "proposed-not-applied",
+  "note": "Capability-focused discovery metadata. Committing this file does not itself change GitHub repository settings."
 }
